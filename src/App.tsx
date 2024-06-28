@@ -1,15 +1,11 @@
-import { useState,useEffect } from 'react'
+import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { getFullName } from './theory/two'
 
 function App() {
   const [count, setCount] = useState(0)
 
-  useEffect(()=>{
-    console.log(getFullName('Jenya','Kuzyashev','Anatilievich'))
-  },[])
 
   return (
     <>

@@ -20,3 +20,14 @@ export function getFullName(firstName: string, ...names:string[]){
     return firstName + ' ' + names.join(' ')
 }
 
+/*Функциональные перегрузки */
+function getInfo(name: string):string
+function getInfo(age:number): number
+function getInfo(single: boolean):boolean
+function getInfo(value:any):any {
+    return value
+}
+
+const result = getInfo('123')
+const result1 = getInfo(123)
+const result2 = getInfo(true)
